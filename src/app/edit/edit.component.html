@@ -1,0 +1,16 @@
+<form (submit)="updateProduct()" #formData="ngForm">
+  <label for="title">Title:
+    <input type="text" name="title" id="title" [(ngModel)]="product.title">
+  </label>
+  <label for="price">Price:
+    <input type="text" name="price" id="price" [(ngModel)]="product.price">
+  </label>
+  <label for="imgUrl">Image URL:
+    <input type="text" name="imgUrl" id="imgUrl" [(ngModel)]="product.imgUrl">
+  </label>
+
+  <button (click)="deleteProduct(product)">DELETE</button>
+
+  <input type="submit" value="UPDATE">
+
+</form>

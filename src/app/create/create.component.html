@@ -1,0 +1,12 @@
+<form (submit)="addProduct()" #formData="ngForm">
+  <label for="title">Title:
+    <input type="text" name="title" id="title" required [(ngModel)]="newProduct.title">
+  </label>
+  <label for="price">Price:
+    <input type="number" name="price" id="price" required [(ngModel)]="newProduct.price">
+  </label>
+  <label for="imgUrl">Image URL:
+    <input type="text" name="imgUrl" id="imgUrl" [(ngModel)]="newProduct.imgUrl">
+  </label>
+  <input [disabled]="!formData.valid" type="submit" value="CREATE">
+</form>

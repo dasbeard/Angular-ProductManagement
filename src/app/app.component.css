@@ -1,0 +1,17 @@
+*{
+  text-align: center;
+}
+
+nav a, nav p{
+  display: inline;
+}
+
+nav p{
+  margin: 0 10px;
+}
+
+.test{
+  outline: 1px solid black;
+  width: 100%;
+  min-height: 50px;
+}
